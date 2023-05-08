@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/evalTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="평가를 기다리고 있습니다!"
+        android:fontFamily="@font/basicfont"
+        android:textColor="@color/textcolor"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"/>
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        style="@style/evalmoneyRatingBar"
+        android:layout_width="250dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1"
+        android:theme="@style/CustomRatingBar" />
+    <Button
+        android:background="@drawable/buttonradius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/basicfont"
+        android:text="평가하기"/>
+
+</LinearLayout>

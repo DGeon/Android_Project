@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/prevTvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/basicfont"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:text="날짜"/>
+        <TextView
+            android:id="@+id/prevTvAttendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/basicfont"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="출근시간"/>
+        <TextView
+            android:id="@+id/prevTvleavework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/basicfont"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="퇴근시간"/>
+        <Button
+            android:id="@+id/prevBtnUpdate"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/basicfont"
+            android:textSize="12sp"
+            android:onClick="onClick"
+            android:background="@drawable/buttonradius"
+            android:backgroundTint="#AAECC270"
+            android:textColor="#ffffff"
+            android:text="수정"/>
+
+        <Button
+            android:id="@+id/prevBtnDelete"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/basicfont"
+            android:onClick="onClick"
+            android:background="@drawable/buttonradius"
+            android:textSize="12sp"
+            android:backgroundTint="#AA5F97DC"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:text="삭제"/>
+    </LinearLayout>
+</LinearLayout>

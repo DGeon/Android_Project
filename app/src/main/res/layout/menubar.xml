@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerView"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:onClick="onClick"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/menubarTvHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="반갑습니다"
+            android:fontFamily="@font/basicfont"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/menubarTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/basicfont"
+            android:textColor="#ffffff"
+            android:textSize="33dp"/>
+
+        <TextView
+            android:id="@+id/menubarTvSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:fontFamily="@font/basicfont"
+            android:text="적게 일하고 돈은 많이 받으세요!"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#80ffffff"
+                    />
+
+
+                <TextView
+                    android:id="@+id/menubarTvPami"
+                    style="@style/menubarStyle"
+                    android:text="근태기록"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#80ffffff"/>
+
+                <TextView
+                    android:id="@+id/menubarTvAmi"
+                    style="@style/menubarStyle"
+                    android:text="퇴 근"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#80ffffff"/>
+
+                <TextView
+                    android:id="@+id/menubarTvBus"
+                    style="@style/menubarStyle"
+                    android:text="버 스"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#80ffffff"/>
+
+                <TextView
+                    android:id="@+id/menubarTvWork"
+                    style="@style/menubarStyle"
+                    android:text="도와줘!!"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#80ffffff"/>
+
+                <TextView
+                    android:id="@+id/menubarTvMypage"
+                    style="@style/menubarStyle"
+                    android:text="마이페이지"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#80ffffff"/>
+
+                <TextView
+                    android:id="@+id/menubarTvLogout"
+                    style="@style/menubarStyle"
+                    android:text="로그아웃"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#80ffffff"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/menubarTvOpen"
+                    android:layout_weight="1"
+                    style="@style/menubarStyle"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:padding="10dp"
+                    android:text="오픈소스"/>
+                <!--<TextView
+                    android:id="@+id/menubarTvSecret"
+                    android:layout_weight="1"
+                    style="@style/menubarStyle"
+                    android:textSize="15sp"
+                    android:gravity="left|center"
+                    android:padding="10dp"
+                    android:text="개인정보처리방침"/>-->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

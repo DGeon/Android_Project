@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <TextView
+        android:id="@+id/joinTvTitle"
+        style="@style/myTitleStyle"
+        android:textSize="50sp"
+        android:layout_marginTop="50dp"
+        android:text="회원가입입력"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="9"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_row="0"
+            android:layout_column="0"
+            android:id="@+id/joinTvID"
+            android:text="핸드폰번호"
+            style="@style/joinTextView"/>
+        <EditText
+            android:layout_row="0"
+            android:layout_column="1"
+            android:id="@+id/joinEtID"
+            style="@style/joinEditText"
+            android:autoSizeStepGranularity="2sp"
+            android:hint="핸드폰번호를 입력해주세요."
+             />
+
+        <TextView
+            android:layout_row="1"
+            android:layout_column="0"
+            android:id="@+id/joinTvPw"
+            android:text="비밀번호"
+
+            style="@style/joinTextView"/>
+        <EditText
+            android:layout_row="1"
+            android:layout_column="1"
+            android:id="@+id/joinEtPw"
+            android:inputType="textPassword"
+            style="@style/joinEditText"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:hint="비밀번호를 입력해주세요."
+            />
+
+        <TextView
+            android:layout_row="2"
+            android:layout_column="0"
+            android:id="@+id/joinTvPwCheck"
+            android:text="비밀번호확인"
+
+            style="@style/joinTextView"/>
+        <EditText
+            android:layout_row="2"
+            android:layout_column="1"
+            android:id="@+id/joinEtPwCheck"
+            style="@style/joinEditText"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:hint="비밀번호를 입력해주세요."
+            />
+
+        <TextView
+            android:layout_row="3"
+            android:layout_column="0"
+            android:id="@+id/joinTvBasic"
+            android:text="연봉"
+
+            style="@style/joinTextView"/>
+        <EditText
+            android:layout_row="3"
+            android:layout_column="1"
+            android:id="@+id/joinEtBasic"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            style="@style/joinEditText"
+            android:hint="연봉를 입력해주세요."
+            />
+
+       <!-- <TextView
+            android:layout_row="4"
+            android:layout_column="0"
+            android:id="@+id/joinTvBonus"
+            android:text="상여금"
+
+            style="@style/joinTextView"/>
+        <EditText
+            android:layout_row="4"
+            android:layout_column="1"
+            android:id="@+id/joinEtBonus"
+            style="@style/joinEditText"
+            android:text="0"
+            />-->
+        <TextView
+            android:layout_row="5"
+            android:layout_column="0"
+            android:id="@+id/joinTvMeal"
+            android:text="비과세액"
+            style="@style/joinTextView"/>
+        <EditText
+            android:layout_row="5"
+            android:layout_column="1"
+            android:id="@+id/joinEtMeal"
+            style="@style/joinEditText"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:hint="비과세액을 입력해주세요."
+            />
+
+        <TextView
+            android:layout_row="6"
+            android:layout_column="0"
+            android:id="@+id/joinTvSTime"
+            android:text="출근시간"
+            style="@style/joinTextView"/>
+        <EditText
+            android:layout_row="6"
+            android:layout_column="1"
+            android:id="@+id/joinEtSTime"
+            style="@style/joinEditText"
+            android:text=" 09:00"
+            android:imeOptions="actionDone"
+            android:editable="false"
+            android:clickable="true"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_row="7"
+            android:layout_column="0"
+            android:id="@+id/joinTvWTIME"
+            android:text="업무시간"
+            style="@style/joinTextView"/>
+        <Spinner
+            android:layout_row="7"
+            android:layout_column="1"
+            android:id="@+id/joinSpWTime"
+            style="@style/joinEditText"
+
+            android:imeOptions="actionDone"
+            />
+
+        <!--<TextView
+            android:layout_row="7"
+            android:layout_column="0"
+            android:id="@+id/joinTvOverTime"
+            android:text="시간 외 수당"
+            style="@style/joinTextView"/>
+        <EditText
+            android:layout_row="7"
+            android:layout_column="1"
+            android:id="@+id/joinEtOverTime"
+            style="@style/joinEditText"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_row="8"
+            android:layout_column="0"
+            android:id="@+id/joinTvTime"
+            android:text="출근시간"
+            style="@style/joinTextView"/>
+        <TimePicker
+            android:layout_row="8"
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/joinTpTime"
+            android:timePickerMode="spinner"
+
+            />-->
+    </GridLayout>
+    <LinearLayout
+        android:layout_row="9"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_horizontal"
+        android:paddingRight="20dp">
+
+
+        <Button
+            android:id="@+id/joinBtnPrev"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/buttonradius"
+            android:backgroundTint="#5F97DC"
+            android:fontFamily="@font/basicfont"
+            android:textColor="#FFFFFF"
+            android:onClick="onClick"
+            android:text="이전"/>
+
+        <Button
+            android:id="@+id/joinBtnJoin"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/buttonradius"
+            android:backgroundTint="#ECC270"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/basicfont"
+            android:textColor="#FFFFFF"
+            android:onClick="onClick"
+            android:text="회원가입"/>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

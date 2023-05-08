@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5559b4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/menuTvBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="≡"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:textSize="50sp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/menuTvtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="마이페이지"
+                android:fontFamily="@font/basicfont"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:textSize="50sp"
+                android:textColor="@color/textcolor" />
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="9">
+
+            <TextView
+                android:id="@+id/mypageTvId"
+                style="@style/joinTextView"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="핸드폰번호" />
+
+            <EditText
+                android:id="@+id/mypageEtId"
+                style="@style/joinEditText"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:focusableInTouchMode="false"
+
+                />
+
+            <TextView
+                android:id="@+id/mypageTvPw"
+                style="@style/joinTextView"
+                android:layout_row="1"
+                android:layout_column="0"
+
+                android:text="비밀번호" />
+
+            <EditText
+                android:id="@+id/mypageEtPw"
+                style="@style/joinEditText"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:hint="비밀번호를 입력해주세요."
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/mypageTvPwCheck"
+                style="@style/joinTextView"
+                android:layout_row="2"
+                android:layout_column="0"
+
+                android:text="비밀번호확인" />
+
+            <EditText
+                android:id="@+id/mypageEtPwCheck"
+                style="@style/joinEditText"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:hint="비밀번호를 입력해주세요."
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/mypageTvBasic"
+                style="@style/joinTextView"
+                android:layout_row="3"
+                android:layout_column="0"
+
+                android:text="연봉" />
+
+            <EditText
+                android:id="@+id/mypageEtBasic"
+                style="@style/joinEditText"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:hint="연봉를 입력해주세요."
+                android:singleLine="true"
+                android:imeOptions="actionDone"/>
+
+            <!--<TextView
+                android:id="@+id/mypageTvBonus"
+                style="@style/joinTextView"
+                android:layout_row="4"
+                android:layout_column="0"
+
+                android:text="상여금" />
+
+            <EditText
+                android:id="@+id/mypageEtBonus"
+                style="@style/joinEditText"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:text="0" />-->
+
+            <TextView
+                android:id="@+id/mypageTvMeal"
+                style="@style/joinTextView"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:text="비과세액" />
+
+            <EditText
+                android:id="@+id/mypageEtMeal"
+                style="@style/joinEditText"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:hint="비과세액을 입력해주세요."
+                android:singleLine="true"
+                android:imeOptions="actionDone"/>
+
+            <TextView
+                android:layout_row="6"
+                android:layout_column="0"
+                android:id="@+id/mypageTvSTime"
+                android:text="출근시간"
+                style="@style/joinTextView"/>
+            <EditText
+                android:layout_row="6"
+                android:layout_column="1"
+                android:id="@+id/mypageEtSTime"
+                style="@style/joinEditText"
+                android:text=" 09:00"
+                android:imeOptions="actionDone"
+                android:editable="false"
+                android:clickable="true"
+                android:focusable="false"
+                />
+            <TextView
+                android:layout_row="7"
+                android:layout_column="0"
+                android:id="@+id/mypageTvWTIME"
+                android:text="업무시간"
+                style="@style/joinTextView"/>
+            <Spinner
+                android:layout_row="7"
+                android:layout_column="1"
+                android:id="@+id/mypageSpWTime"
+                style="@style/joinEditText"
+
+                android:imeOptions="actionDone"
+                />
+           <!-- <TextView
+                android:layout_row="6"
+                android:layout_column="0"
+                android:id="@+id/mypageTvMealCheck"
+                android:text="식대(비급여)"
+                style="@style/joinTextView"/>
+
+            <CheckBox
+                android:layout_row="6"
+                android:layout_column="1"
+                android:id="@+id/mypageCbMealCheck"
+                style="@style/joinTextView"
+                android:layout_gravity="right"
+                android:text="비급여 시 체크"
+                />
+
+            <TextView
+                android:id="@+id/mypageTvOverTime"
+                style="@style/joinTextView"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:text="시간 외 수당" />
+
+            <EditText
+                android:id="@+id/mypageEtOverTime"
+                style="@style/joinEditText"
+                android:layout_row="7"
+                android:layout_column="1"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/mypageTvAnnual"
+                style="@style/joinTextView"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:text="연차수당" />
+
+            <EditText
+                android:id="@+id/mypageEtAnnual"
+                style="@style/joinEditText"
+                android:layout_row="8"
+                android:layout_column="1"
+                android:text="0" />-->
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <Button
+                android:id="@+id/mypageBtnPrev"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/buttonradius"
+                android:backgroundTint="#5F97DC"
+                android:fontFamily="@font/basicfont"
+                android:text="이전"
+                android:onClick="onClick"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/mypageBtnUpdate"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/buttonradius"
+                android:backgroundTint="#ECC270"
+                android:fontFamily="@font/basicfont"
+                android:text="수정"
+                android:onClick="onClick"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="75dp"
+            android:paddingRight="75dp"
+            >
+            <Button
+                android:id="@+id/mypageBtnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/buttonradius"
+                android:backgroundTint="#E66F6F"
+                android:fontFamily="@font/basicfont"
+                android:text="회원탈퇴"
+                android:onClick="onClick"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/menubar" />
+</androidx.drawerlayout.widget.DrawerLayout>

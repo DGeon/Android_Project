@@ -1,0 +1,139 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.amiCalcApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">#DAB398E4</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+<!--                                제목                                                         -->
+    <style name="myTitleStyle" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/basicfont</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/textcolor</item>
+    </style>
+
+
+
+<!--                                회원가입(Join)                                                -->
+    <style name="joinTextView" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/basicfont</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">#9C6A1E</item>
+    </style>
+
+    <style name="joinEditText" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/basicfont</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/editboxstyle</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--                                전월(prev)                                                -->
+    <style name="prevTextView" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/basicfont</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#9C6A1E</item>
+    </style>
+
+    <style name="prevEditText" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/basicfont</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:background">@drawable/editboxstyle</item>
+    </style>
+
+    <!--                               ami                                                -->
+    <style name="amiTextView" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+        <item name="android:fontFamily">@font/basicfont</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/tableradius</item>
+        <item name="android:textColor">#9C6A1E</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="amiEditText" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/basicfont</item>
+        <item name="android:background">@drawable/editboxstyle</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--                               bus                                               -->
+    <style name="busTextView" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+        <item name="android:fontFamily">@font/basicfont</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/tableradius</item>
+        <item name="android:textColor">#9C6A1E</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="busEditText" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/basicfont</item>
+        <item name="android:background">@drawable/editboxstyle</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--                               eval(평가별점)                                             -->
+    <style name="CustomRatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#0040FF</item>
+        <item name="colorControlActivated">#FFFF0000</item>
+    </style>
+
+    <style name="evalmoneyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/evalmoney</item>
+    </style>
+
+    <!--                               menubar(슬라이드메뉴)                                      -->
+    <style name="menubarStyle" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="fontFamily">@font/basicfont</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">OnClick</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+</resources>
